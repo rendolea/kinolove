@@ -1,0 +1,619 @@
+@font-face {
+    font-family: "Haettenschweiler";  
+    src: url("../fonts/haettenschweiler.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
+
+p{
+    font-family: "Haettenschweiler";  
+    font-size: 40px;
+}
+
+body{
+    background-color: #1B1B1B;
+    margin: 0;
+
+}
+
+.wraper{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.menu_wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #474444;
+    flex-direction: column;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    z-index: 99;
+}
+
+.menu_active{
+    transform: translateX(0%);
+}
+
+.content_active{
+    transform: translateX(30%);
+}
+
+.content{
+    transition: 0.5s;
+    position: relative;
+}
+
+.menu_list{
+    display: flex;
+    height: 50%;
+    padding-top: 20%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu_btn{
+    position: absolute;
+    top: 65px;
+    right: -110px;
+}
+
+.menu_list a{
+    text-decoration: none;
+    color: white;
+    font-family: "Haettenschweiler";  
+    font-size: 40px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.logo_wrap span{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    background-color: #1B1B1B;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.logot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main_but nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.main_but nav a{
+    color: white;
+    font-family: "Haettenschweiler";  
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.head_lihk{
+    background-color: #151515;
+    font-size: 25px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 34px 0px 54px 0px ;
+    padding: 19px 10%;
+    overflow: hidden;
+}
+
+.head_lihk span{
+    font-size: 25px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.main_inf{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bunner img{
+    width: 100%;
+    box-shadow: 8px 4px 20px 0px black;
+}
+
+.film_inf{
+    margin-left: 34px;
+    width: 60%;
+}
+
+.name span{
+    color: white;
+    font-size: 20px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.name h3{
+    color: white;
+    font-family: "Haettenschweiler";  
+    font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+
+
+.film_inf table tr td{
+    color: white;
+    font-size: 25px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-align: start;
+}
+
+.film_inform_text{
+    color: white;
+    font-size: 25px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+
+.treiler{
+    margin-bottom: 124px;
+}
+
+.treiler iframe{
+    border-radius: 10px;
+}
+
+.data_film{
+    width: 60%;
+}
+
+.chooser{
+    background-color: #242424;
+    color: white;
+    padding: 5px 18px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px 0px #0e0e0e;
+}
+
+.list li{
+    font-family: "Haettenschweiler";
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    list-style: none;
+    cursor: pointer;
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 8px 0px;
+}
+
+.data_film h1{
+    color: white;
+    font-family: "Haettenschweiler";  
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 3px;
+    margin-top: 34px;
+    margin-bottom: 15px;
+}
+
+.data_film span{
+    font-size: 30px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-style: normal;
+    font-weight:100;
+    text-transform: uppercase;
+    color: white;
+}
+
+.data_seans{
+    display: flex ;
+    flex-direction: column;
+    background-color: #151515;
+    color: white;
+    width: 90px;
+    height: 92px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raspisanie{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 105px;
+}
+
+.time{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+
+.time a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-style: normal;
+    font-weight:100;
+    text-transform: uppercase;
+}
+
+.film_ver{
+    width: 100%;
+    text-align: center;
+    background-color: #570000;
+}
+
+.film_ver span{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-style: normal;
+    font-weight:100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.booking{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000009e;
+}
+
+.boo{
+    background-color: #2B2A2A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    overflow: hidden;
+}
+
+.back_shadow{
+    background-color: rgba(0, 0, 0, 0.847);
+}
+
+.zagol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zagol h1{
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-top: 43px;
+    font-size: 25px;
+}
+
+.zagol div span{
+    color: white;
+    font-size: 10px;
+    margin-bottom: 11px;
+}
+
+.zagol div{
+    margin-bottom: 11px;
+}
+
+.date{
+    background-color: #282727;
+    padding: 9px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.mest{
+    background-color: #282727;
+    width: 100%;
+    padding-top: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ecran{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ecran img{
+    width: 90%;
+}
+
+.ecran span{
+    color: white;
+    font-size: 40px;
+    margin-top:-40px ;
+}
+
+.mest table{
+    border-spacing: 10px;
+    margin-top: 42px;
+}
+
+.mest table tr td{
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    margin: 13px;
+    color: white;
+    font-size: 13px;
+}
+
+.free{
+    background-color: #323232;
+}
+
+.booked{
+    background-color: #CECECE;
+}
+
+.choose{
+    background-color: #FE0000;
+}
+
+.name_mest{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.name_mest div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.name_mest span{
+    color: white;
+}
+
+.bil_inf{
+    height: 100px;
+    width: 100%;
+}
+
+.pok_bil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 25px ;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.billet{
+    background-color: #282727;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 30%;
+}
+
+.opl{
+    transition: 0.5s;
+}
+
+.opl button{
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 40px;
+}
+
+.opl button a{
+    text-decoration: none;
+    color: white;
+    font-family: "Haettenschweiler";  
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #242424;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 10%;
+    box-shadow: 0px -20px 40px black;
+    overflow: hidden;
+}
+
+.logo_name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 260px;
+
+}
+
+.logo_name span{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+
+.foot_if{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 92px;
+    gap: 100px;
+    margin-left: 18px;
+}
+
+.menu{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start; 
+}
+
+.menu span{
+    font-family: "Haettenschweiler";
+    font-size: 50px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.menu a{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 200;
+    margin-bottom: 5px;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.pr_op{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 230px;
+}
+
+.opl span{
+    font-family: "Haettenschweiler";
+    font-size: 50px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.opl_ic{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.pr_op p{
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+}
+
+.locat{
+    display: flex;
+    flex-direction: column;
+gap: 18px;
+}
+
+.locat h1{
+    margin: 0;
+    padding: 0;
+    font-family: "Haettenschweiler";
+    font-size: 50px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.locat span{
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+}
